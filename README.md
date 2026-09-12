@@ -1,10 +1,8 @@
 # Generative Models + Combinatorial Optimization
 
-Two small, independent demos built to explore the skill gap for the Mitacs
-GRI **"UAV-EV Collaborative Rescue Service Provision"** project (Prof. Nan
-Chen, University of Ottawa), which explicitly asks for: "familiarity with
-generative models (diffusion models, GANs, VAEs)... experience with
-optimization, algorithm design, or combinatorial matching problems."
+Two small, independent demos, built out of interest in two areas adjacent to
+my existing computer-vision/ML work that I hadn't gotten properly hands-on
+with yet: generative modelling and combinatorial optimization.
 
 ## 1. Generative model — a small convolutional VAE
 
@@ -53,11 +51,11 @@ optimal solver is **~30% shorter**, and the plotted paths make the reason
 visible (greedy produces crossing, backtracking routes that an optimal
 matching avoids entirely).
 
-**Scope note**: this is the *static* sub-problem — the real project setting
-is dynamic (UAVs and EVs coordinating over time, under uncertainty, which is
-where the reinforcement-learning side of that project comes in). This demo
-covers the assignment/matching foundation that a full dynamic system would
-still need to solve repeatedly at each decision point.
+**Scope note**: this is the *static* sub-problem — a fully dynamic version
+(agents and targets coordinating over time, under uncertainty) would bring
+reinforcement learning into the mix on top of this. This demo covers the
+assignment/matching foundation that a dynamic system would still need to
+solve repeatedly at each decision point.
 
 ## Setup
 

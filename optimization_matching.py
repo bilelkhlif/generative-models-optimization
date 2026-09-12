@@ -1,12 +1,11 @@
 """Combinatorial matching demo: assigning UAVs to disaster rescue sites so
 that total travel distance is minimized, via the Hungarian algorithm.
 
-This is a toy stand-in for the "optimization, algorithm design, or
-combinatorial matching problems" skill explicitly asked for in the Mitacs GRI
-"UAV-EV Collaborative Rescue Service Provision" project (Prof. Nan Chen,
-University of Ottawa) -- that project's real setting also involves EVs and
-reinforcement learning for the dynamic case; this demonstrates the static
-assignment sub-problem that a full system would need to solve repeatedly.
+A toy version of a real coordination problem: matching mobile responders
+(UAVs, EVs, etc.) to targets under a cost function. A fully dynamic version
+would also bring in reinforcement learning to handle agents and targets
+changing over time; this demonstrates the static assignment sub-problem that
+a full system would still need to solve repeatedly.
 """
 import numpy as np
 from scipy.optimize import linear_sum_assignment
